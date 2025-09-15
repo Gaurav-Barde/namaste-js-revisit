@@ -1,12 +1,44 @@
-console.log(n);
-console.log(square);
+// console.log(n);
+// console.log(square);
 
-var n = 2;
+// var n = 2;
 
-function square(num) {
-  var ans = num * num;
-  return ans;
+// function square(num) {
+//   var ans = num * num;
+//   return ans;
+// }
+
+// var square2 = square(n);
+// var square4 = square(4);
+
+// What is a block
+{
 }
 
-var square2 = square(n);
-var square4 = square(4);
+// Block Scoped variables
+// {
+//   let a = 10; //block scoped
+//   const b = 10; //block scoped
+//   var c = 10; //not a block scoped
+// }
+// console.log(a); // will be an error because of block scope
+
+// Shadowing
+// let a = 10;
+// {
+//   // this a shadows outer a
+//   let a = 20;
+//   console.log(a); // output 20
+// }
+
+// console.log(a); // output 10
+
+// Illegal Shadowing
+// let a = 10;
+// {
+//   // will be an error
+//   var a = 20;
+//   console.log(a); // output 20
+// }
+
+// console.log(a); // output 10
