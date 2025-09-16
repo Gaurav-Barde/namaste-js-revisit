@@ -42,3 +42,18 @@
 // }
 
 // console.log(a); // output 10
+
+// Closure
+let b = 100;
+function x() {
+  let a = 100;
+  function inner() {
+    console.log(a);
+  }
+  return inner;
+}
+
+// a = 200;
+
+var z = x();
+z(); //output will be 7 because function y will form closure with its lexical environment
